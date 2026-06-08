@@ -1,6 +1,6 @@
 # DHT11
 <div align="center">
-  <img src="https://d229kd5ey79jzj.cloudfront.net/791/images/791_1_H.png" alt="DHT 11" width="100"/>
+  <img src="https://d229kd5ey79jzj.cloudfront.net/791/images/791_1_H.png" alt="DHT 11" width="250"/>
   <h3></h3>
 </div>
 
@@ -13,7 +13,7 @@ Its reading range is:
 
 For data pins we have the bare sensor (4 pins) and the module (3 pins):
 <div align="center">
-  <img src="https://europe1.discourse-cdn.com/arduino/original/4X/4/1/c/41c4c8c991e93c81c638564d369848a666401575.jpeg" alt="DHT 11 data pins" width="100"/>
+  <img src="https://europe1.discourse-cdn.com/arduino/original/4X/4/1/c/41c4c8c991e93c81c638564d369848a666401575.jpeg" alt="DHT 11 data pins" width="400"/>
   <h3></h3>
 </div>
 Where VCC must be connected to a power output between 3.3V and 5V, GND to ground, and DATA to the pin which will be receive the signal in your ESP32.
@@ -69,7 +69,7 @@ void loop() {
   Serial.print("°C / ");
   Serial.print(f);
   Serial.println("°F");
-}```
+}
 
 Expected result:
-```Humidity: x% | Temperature: x°C / x°F```
+Humidity: x% | Temperature: x°C / x°F
