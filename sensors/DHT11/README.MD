@@ -70,7 +70,9 @@ void loop() {
   Serial.print("°C / ");
   Serial.print(f);
   Serial.println("°F");
-}```
+}
+```
+
 Expected result:
 ```text
 Humidity: x% | Temperature: x°C / x°F
