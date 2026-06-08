@@ -21,7 +21,8 @@ When using the bare sensor, connect a 10kΩ pull-up resistor between the VCC and
 
 Here is a code for testing:
 
-```#include "DHT.h"
+```cpp
+#include "DHT.h"
 
 // Define the digital pin connected to the DHT11 data pin, in this example it is the second one.
 #define DHTPIN 2     
@@ -69,7 +70,8 @@ void loop() {
   Serial.print("°C / ");
   Serial.print(f);
   Serial.println("°F");
-}
-
+}```
 Expected result:
+```text
 Humidity: x% | Temperature: x°C / x°F
+```
