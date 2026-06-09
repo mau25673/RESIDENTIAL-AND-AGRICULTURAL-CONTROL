@@ -1,6 +1,6 @@
 # FC-37 (Rain Sensor)
 <div align="center">
-  <img src="https://d229kd5ey79jzj.cloudfront.net/891/images/891_1_H.png" alt="FC-37 Rain Sensor" width="100"/>
+  <img src="https://d229kd5ey79jzj.cloudfront.net/891/images/891_1_H.png" alt="FC-37 Rain Sensor" width="300"/>
   <h3></h3>
 </div>
 
@@ -14,13 +14,13 @@ It uses an operating voltage of 3.3V to 5V and provides:
 
 For connections, the FC-37 sensing plate has 2 pins and the LM393 module has 4 pins:
 <div align="center">
-  <img src="https://how2electronics.com/wp-content/uploads/2023/12/RainDrop-Sensor-Pinout.jpg" alt="FC-37 pinout" width="100"/>
+  <img src="https://how2electronics.com/wp-content/uploads/2023/12/RainDrop-Sensor-Pinout.jpg" alt="FC-37 pinout" width="300"/>
   <h3></h3>
 </div>
 Where:
-- VCC must be connected to a 3.3V or 5V power source;
-- GND must be connected to ground;
-- AO provides the analog signal;
+- VCC must be connected to a 3.3V or 5V power source.
+- GND must be connected to ground.
+- AO provides the analog signal.
 - DO provides a digital signal.
 
 When water droplets fall on the sensing plate, the resistance between the conductive tracks decreases, causing a change in the output signals that can be read by the microcontroller.
