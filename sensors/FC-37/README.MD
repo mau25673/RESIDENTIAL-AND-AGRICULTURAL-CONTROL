@@ -27,7 +27,8 @@ Where:
 When water droplets fall on the sensing plate, the resistance between the conductive tracks decreases, causing a change in the output signals that can be read by the microcontroller.
 
 Here is a code for testing:
-```
+
+```cpp
 // Declare variables for both, analog and digital output
 int rainAnalogPin = A0;  // AO
 int rainDigitalPin = 2;  // DO
@@ -65,9 +66,11 @@ void loop() {
 
   // Wait 1 second between measurements
   delay(1000);
-}```
-
+}
+```
 
 Expected result:
-```FC-37 Rain Sensor Test
-Analog Value: 1023 | Digital Value: 1 -> No rain detected.```
+```text
+FC-37 Rain Sensor Test
+Analog Value: 1023 | Digital Value: 1 -> No rain detected.
+```
