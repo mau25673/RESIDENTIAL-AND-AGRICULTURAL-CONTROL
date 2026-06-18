@@ -1,19 +1,19 @@
-# DHT11
+# DHT22
 <div align="center">
-  <img src="https://d229kd5ey79jzj.cloudfront.net/791/images/791_1_H.png" alt="DHT 11" width="250"/>
+  <img src="https://d229kd5ey79jzj.cloudfront.net/791/images/791_1_H.png" alt="DHT 22" width="250"/>
   <h3></h3>
 </div>
 
-DHT11 is an easy to use digital temperature and humidity sensor, commonly used in IoT projects like this one, providing information with a good precision at a 
+DHT22 is an easy to use digital temperature and humidity sensor, commonly used in IoT projects like this one, providing information with a good precision at a 
 cheap price, with a pre-made library that facilitates the implementation.
 It uses a operating voltage of 3.3V to 5V and a operating current of 2.5mA.
 Its reading range is:
-- 0°C to 50°C (Precision of ±2°C);
-- 20% to 90% RH (Precision of 5% RH).
+- -40°C to 80°C (Precision of ±0.5°C);
+- 0% to 100% RH (Precision of ±2% to ±5% RH).
 
 For data pins we have the bare sensor (4 pins) and the module (3 pins):
 <div align="center">
-  <img src="https://europe1.discourse-cdn.com/arduino/original/4X/4/1/c/41c4c8c991e93c81c638564d369848a666401575.jpeg" alt="DHT 11 data pins" width="400"/>
+  <img src="https://europe1.discourse-cdn.com/arduino/original/4X/4/1/c/41c4c8c991e93c81c638564d369848a666401575.jpeg" alt="DHT 22 data pins" width="400"/>
   <h3></h3>
 </div>
 Where VCC must be connected to a power output between 3.3V and 5V, GND to ground, and DATA to the pin which will be receive the signal in your ESP32.
@@ -28,7 +28,7 @@ Here is a code for testing:
 #define DHTPIN 2     
 
 // Define the sensor type (DHT11 or DHT22)
-#define DHTTYPE DHT11   
+#define DHTTYPE DHT22
 
 // Initialize the DHT sensor
 DHT dht(DHTPIN, DHTTYPE);
