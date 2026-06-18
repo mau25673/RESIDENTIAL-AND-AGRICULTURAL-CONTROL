@@ -1,6 +1,6 @@
 # DHT22
 <div align="center">
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0lFH05Zfml3e_QPkkncewn45JjsMcWePrBTYeFjwJ-w&s=10" alt="DHT 22" width="250"/>
+  <img src="https://d229kd5ey79jzj.cloudfront.net/646/images/646_1_X.png?20260226145908" alt="DHT 22" width="250"/>
   <h3></h3>
 </div>
 
