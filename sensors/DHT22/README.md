@@ -24,10 +24,10 @@ Here is a code for testing:
 ```cpp
 #include "DHT.h"
 
-// Define the digital pin connected to the DHT11 data pin, in this example it is the second one.
+// Define the digital pin connected to the DHT22 data pin, in this example it is the second one.
 #define DHTPIN 2     
 
-// Define the sensor type (DHT11 or DHT22)
+// Define the sensor type
 #define DHTTYPE DHT22
 
 // Initialize the DHT sensor
