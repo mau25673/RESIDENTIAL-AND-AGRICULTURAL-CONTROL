@@ -1,0 +1,72 @@
+esphome:
+  name: esphome-web-9d2028
+  friendly_name: Esp32
+  min_version: 2026.4.0
+  name_add_mac_suffix: false
+
+esp32:
+  variant: esp32
+  framework:
+    type: esp-idf
+
+logger:
+api:
+
+ota:
+  - platform: esphome
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+sensor:
+  - platform: dht
+    pin: GPIO4
+    model: DHT22
+    temperature:
+      name: "Temperatura do Quarto"
+    humidity:
+      name: "Umidade do Quarto"
+    update_interval: 30s
+
+  - platform: adc
+    pin: GPIO32
+    name: "Sensor de Luminosidade"
+    update_interval: 5s
+    unit_of_measurement: lx
+    attenuation: 11db
+    filters:
+      - lambda: |-
+          return (x / 10000.0) * 2000000.0;
+
+  - platform: adc
+    pin: GPIO34
+    name: "Intensidade da Chuva"
+    update_interval: 30s
+    attenuation: 11db
+    filters:
+      - calibrate_linear:
+          - 3.1 -> 0.0
+          - 0.5 -> 100.0
+      - clamp:
+          min_value: 0.0
+          max_value: 100.0
+    unit_of_measurement: "%"
+    accuracy_decimals: 1
+
+binary_sensor:
+  - platform: gpio
+    pin:
+      number: GPIO27
+      inverted: true
+      mode: INPUT_PULLUP
+    name: "Sensor de Chuva"
+    device_class: moisture
+
+  - platform: gpio
+    pin:
+      number: GPIO18
+      mode: INPUT_PULLUP
+      inverted: true
+    name: "Sensor de Fim de Curso"
+    device_class: opening
