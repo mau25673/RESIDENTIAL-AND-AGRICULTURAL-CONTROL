@@ -10,10 +10,14 @@ the reference point.
 Unlike optical alternatives, it relies on direct physical contact to complete an electrical circuit. This specific module comes on a small breakout board, often equipped with status LEDs and pre-wired connector 
 headers to ensure a clean interface with control boards like RAMPS or CNC Shields.
 
+## Specifications
+
 It can operate at 3.3V or 5V and provides:
 
 - Signal Output (SIG): Changes logic state (typically switches to LOW or GND) when the metal lever is pressed;
 - Status Indicator: An onboard LED that provides immediate visual confirmation when the mechanical switch is triggered.
+
+## Connections
 
 For connections, this Mechanical Endstop module features 3 pins:
 
