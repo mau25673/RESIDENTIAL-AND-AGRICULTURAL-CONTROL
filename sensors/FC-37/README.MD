@@ -6,11 +6,15 @@
 
 The FC-37 is a low-cost rain detection sensor used in IoT and automation projects. It can detect the presence of water on its sensing surface by measuring changes in electrical conductivity between exposed conductive tracks.
 
-The sensor is commonly sold together with an LM393 comparator module, which provides both analog and digital outputs, making it easy to interface with microcontrollers such as [ESP32].
+The sensor is commonly sold together with an LM393 comparator module, which provides both analog and digital outputs, making it easy to interface with microcontrollers such as [ESP32](../../1_ESP/README.md).
+
+## Specifications
 
 It uses an operating voltage of 3.3V to 5V and provides:
 - Analog Output (AO): Indicates the amount of water detected on the sensor surface;
 - Digital Output (DO): Indicates whether the detected water level exceeds the threshold set by the onboard potentiometer.
+
+## Connections
 
 For connections, the FC-37 sensing plate has 2 pins and the LM393 module has 4 pins:
 <div align="center">
