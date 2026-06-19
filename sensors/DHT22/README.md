@@ -36,7 +36,7 @@ DHT dht(DHTPIN, DHTTYPE);
 void setup() {
   // Start serial communication for monitoring
   Serial.begin(9600);
-  Serial.println("DHT11 Sensor Test");
+  Serial.println("DHT22 Sensor Test");
 
   // Initialize the sensor
   dht.begin();
