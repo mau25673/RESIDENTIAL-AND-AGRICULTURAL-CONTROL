@@ -1,6 +1,6 @@
 # LDR
 <div align="center">
-  <img src="https://cdn.awsli.com.br/600x700/468/468162/produto/19414320323d30eb14.jpg" alt="LDR" width="250"/>
+  <img src="https://cdn.awsli.com.br/800x800/1563/1563093/produto/314939147/image-removebg-preview--24---1--zklp5n119r.png" alt="LDR" width="250"/>
   <h3></h3>
 </div>
 
