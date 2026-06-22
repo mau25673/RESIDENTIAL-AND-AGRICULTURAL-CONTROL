@@ -44,21 +44,21 @@ This project implements a low-cost, expandable structure for residential and agr
 ### Step 1: Install Home Assistant on the Raspberry Pi
 1. **Prepare the OS**  
    Use Raspberry Pi Imager to install *Home Assistant* on a MicroSD card.
-2. **Boot the System**
+2. **Boot the System**  
    Check to see if everything went smoothly, by either a monitor or following the next steps directly.
 
 ---
 
 ### Step 2: Open the Supervisor and Install ESPHome Add-on
-1. **Connect the Raspberry Pi to the Internet**
+1. **Connect the Raspberry Pi to the Internet**  
    This can be done either by connecting it directly by an ethernet cable or through Wi-Fi, through the following command:
    ```sh
    network update wlan0 --ipv4-method auto --ipv6-method auto --wifi-auth wpa-psk --wifi-mode infrastructure --wifi-ssid <Your_WiFi_SSID> --wifi-psk <Your_WiFi_Password>
    ```
 
-2. **Open the Supervisor**
+3. **Open the Supervisor**  
    On a web browser connected to the same network as the Raspberry Pi, open the following URL:
    ```sh
    http://homeassistant.local:8123/
-   ```
-   It should take some time for it to fully boot up, so wait a few minutes after powering it to connect to the supervisor.
+   ```  
+   It should take some time for it to finish booting up completely, so wait a few minutes after powering it before connecting to the supervisor.
