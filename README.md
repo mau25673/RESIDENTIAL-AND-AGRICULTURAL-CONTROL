@@ -45,7 +45,7 @@ This project implements a low-cost, expandable structure for residential and agr
 1. **Prepare the OS**  
    Use Raspberry Pi Imager to install *Home Assistant* on a MicroSD card.
 2. **Boot the System**
-   Check to see if everything went smoothly.
+   Check to see if everything went smoothly, by either a monitor or following the next steps directly.
 
 ---
 
@@ -61,3 +61,4 @@ This project implements a low-cost, expandable structure for residential and agr
    ```sh
    http://homeassistant.local:8123/
    ```
+   It should take some time for it to fully boot up, so wait a few minutes after powering it to connect to the supervisor.
