@@ -37,14 +37,6 @@ This project implements a low-cost, expandable structure for residential and agr
 - 1x Endstop sensor.
 - Jumper cables.
 
-### Software
-- Python 3.11.9 or newer.
-- ESPHome python library:
-  ```sh
-  pip install esphome
-  ```
-- Command-line tools: git.
-
 ---
 
 ## Installation and Configuration
