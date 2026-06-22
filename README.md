@@ -22,7 +22,7 @@ This project implements a low-cost, expandable structure for residential and agr
 ### Hardware
 - 1x Raspberry Pi 3 (or newer, at least Raspberry Pi 4 is recommended) with Home Assistant OS.
 - 1x ESP32 microcontroller (development board).
-- Micro-usb data capable cables for programming the ESP32 and powering it.
+- Micro-USB data capable cable for programming the ESP32 and powering it.
 
 ### Software
 - CP2102 USB to UART Bridge Controller Driver (required for most ESP32 boards).
