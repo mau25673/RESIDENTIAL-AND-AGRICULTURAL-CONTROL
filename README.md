@@ -8,7 +8,7 @@
 
 ## About the Project
 
-This project implements a low-cost, expandable structure for residential and agricultural control, using Home Assistant OS running in a Raspberry Pi and ESPHome for communication between the main server and the ESP32s that handle the reading of different sensors and activation of peripherals, providing information, automation and control to many different use cases. The system can be controlled from long distances using Tailscale as a VPN (Virtual Private Network), connecting a cellphone directly to the Home Assistant Supervisor without relying on being in the same wifi network.
+This project implements a low-cost, expandable structure for residential and agricultural control, using Home Assistant OS running in a Raspberry Pi and ESPHome for communication between the main server and the ESP32s that handle the reading of different sensors and activation of peripherals, providing information, automation and control to many different use cases. The system can be controlled from long distances using Tailscale as a VPN (Virtual Private Network), connecting a cellphone directly to the Home Assistant Supervisor without relying on being in the same Wi-Fi network.
 
 ---
 
