@@ -93,7 +93,7 @@ As shown in the image above, the ESP32 should be connected to the peripherals us
    then continue through the wizard to complete the installation. If this is the first time connecting the ESP32, you'll need a physical connection, which is
    where the micro-USB data cable will be used. Connect it to the ESP32, then click the three dot menu in the device you created and choose "Install", then choose
    install through direct connection with the supervisor computer.
-   > Note: If you're using a Raspberry Pi with 1 GB of RAM, it won't be powerful enough to compile the .yaml file needed to configure the ESP32. You'll need to compile it in your own machine for it to work. A more in-depth tutorial can be found [here.](./tutorials/CompilingESPHome.md)
+   > Note: If you're using a Raspberry Pi with 1 GB of RAM, it won't be powerful enough to compile the .yaml file needed to configure the ESP32. You'll need to compile it in your own machine for it to work. A more in-depth tutorial can be found [here.](./tutorials/Compiling_ESPHome.md)
 
 2. **Uploading the .yaml Code to the ESP32**
    
