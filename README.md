@@ -53,6 +53,36 @@ This project implements a low-cost, expandable structure for residential and agr
 
 As shown in the image above, the ESP32 should be connected to the peripherals used for it to work correctly. GPIO pins may be changed if you wish to, but the .yaml configuration which ESPHome will run must be changed to follow the changes.
 
+### Hardware Connections
+#### DHT22:
+The DHT22 is a digital temperature and humidity sensor. Detailed specifications can be found in the [DHT22 documentation](/sensors/DHT22/README.md).
+
+| Recommended GPIO / Pin | Function | Description |
+| :--- | :--- | :--- |
+| **VCC (3.3V)** | Power Supply | Powers the sensor. |
+| **GPIO 4** | Data Signal | Data transmission (requires a 10kΩ pull-up resistor to 3.3V). |
+| **NC** | Not Connected | This pin has no electrical connection. |
+| **GND** | Ground | Ground connection for the sensor. |
+
+#### FC-37:
+The FC-37 is a rain and raindrop detection sensor. Detailed specifications can be found in the [FC-37 documentation](/sensors/FC-37/README.md).
+
+| Recommended GPIO / Pin | Function | Description |
+| :--- | :--- | :--- |
+| **VCC (3.3V)** | Power Supply | Powers the sensor. |
+| **GND** | Ground | Ground connection for the sensor. |
+| **GPIO 34 (AO)** | Analog Output | Connects to the Analog Output (AO) of the sensor for real-time rain intensity readings. |
+| **GPIO 37 (DO)** | Digital Output | Connects to the Digital Output (DO) of the sensor for binary rain detection (Rain / No Rain), adjustable via potentiometer. |
+
+#### LDR (Photoresistor):
+The LDR (Photoresistor) is a light-dependent resistor used to measure ambient light levels. Detailed specifications can be found in the [LDR documentation](/sensors/LDR/README.md).
+
+| Recommended GPIO / Pin | Function | Description |
+| :--- | :--- | :--- |
+| **VCC (3.3V)** | Power Supply | Powers the voltage divider circuit. |
+| **GPIO 32 (ADC)** | Analog Input | Connects to the analog pin to read varying voltage levels based on light intensity. |
+| **GND** | Ground | Ground connection for the circuit. |
+
 ## Software Installation and Configuration
 
 ### Step 1: Install Home Assistant on the Raspberry Pi
@@ -74,7 +104,7 @@ As shown in the image above, the ESP32 should be connected to the peripherals us
    On a web browser connected to the same network as the Raspberry Pi, open the following URL:
    ```sh
    http://homeassistant.local:8123/
-   ```  
+   ```
    It should take some time for it to finish booting up completely, so wait a few minutes after powering it before connecting to the supervisor.
 
 3. **Create an User**  
