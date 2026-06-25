@@ -65,7 +65,7 @@ The DHT22 is a digital temperature and humidity sensor. Detailed specifications 
 | **GND** | Ground | Ground connection for the sensor. |
 
 #### FC-37:
-The FC-37 is a rain and raindrop detection sensor. Detailed specifications can be found in the [FC-37 documentation](/sensors/FC-37/README.md).
+The FC-37 is a rain and raindrop detection sensor. Detailed specifications can be found in the [FC-37 documentation](/sensors/FC-37/README.MD).
 
 | Recommended GPIO / Pin | Function | Description |
 | :--- | :--- | :--- |
@@ -75,7 +75,7 @@ The FC-37 is a rain and raindrop detection sensor. Detailed specifications can b
 | **GPIO 37 (DO)** | Digital Output | Connects to the Digital Output (DO) of the sensor for binary rain detection (Rain / No Rain), adjustable via potentiometer. |
 
 #### LDR (Photoresistor):
-The LDR (Photoresistor) is a light-dependent resistor used to measure ambient light levels. Detailed specifications can be found in the [LDR documentation](/sensors/LDR/README.md).
+The LDR (Photoresistor) is a light-dependent resistor used to measure ambient light levels. Detailed specifications can be found in the [LDR documentation](/sensors/LDR/README.MD).
 
 | Recommended GPIO / Pin | Function | Description |
 | :--- | :--- | :--- |
