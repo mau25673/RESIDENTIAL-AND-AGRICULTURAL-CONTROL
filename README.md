@@ -83,6 +83,23 @@ The LDR (Photoresistor) is a light-dependent resistor used to measure ambient li
 | **GPIO 32 (ADC)** | Analog Input | Connects to the analog pin to read varying voltage levels based on light intensity. |
 | **GND** | Ground | Ground connection for the circuit. |
 
+This section details the connection of a DC Motor controlled via an SRD-05VDC-SL-C relay module, with voltage regulation supplied by an MT3608 step-up converter. Detailed specifications can be found in the [Motor & Power documentation](/sensors/motor-relay/README.md).
+
+#### Relay Module:
+| Recommended GPIO / Pin | Function | Description |
+| :--- | :--- | :--- |
+| **VCC (5V)** | Power Supply | Powers the relay electromagnet coil. |
+| **GND** | Ground | Ground connection for the circuit. |
+| **GPIO 12 (IN)** | Control Signal | Digital output pin to trigger the relay. |
+
+#### Power & Motor:
+| Component / Pin | Connected To | Description |
+| :--- | :--- | :--- |
+| **MT3608 VIN+** | Main Power Source | Input voltage from the main power supply. |
+| **MT3608 VIN-** | Main Power Ground | Ground connection from the main power supply. |
+| **MT3608 VOUT+** | Relay COM (Common) | Elevated voltage output adjusted via the MT3608 potentiometer to match the motor's operating voltage (12V). |
+| **MT3608 VOUT-** | Motor (-) Terminal | Direct ground path for the motor power circuit. |
+
 ## Software Installation and Configuration
 
 ### Step 1: Install Home Assistant on the Raspberry Pi
