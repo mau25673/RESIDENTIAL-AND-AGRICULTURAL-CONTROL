@@ -47,7 +47,7 @@ This project implements a low-cost, expandable structure for residential and agr
 ### ESP32 and Peripherals
 
 <div align="center">
-  <img src="https://i.imgur.com/5leh4PJ.png" alt="Esquematic from circuit" width="600"/>
+  <img src="https://i.imgur.com/44zt0wd.png" alt="Esquematic from circuit" width="600"/>
   <h3></h3>
 </div>
 
