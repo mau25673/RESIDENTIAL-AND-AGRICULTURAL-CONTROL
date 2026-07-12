@@ -34,10 +34,16 @@
 
 ### Step 3: Setting up ESPHome in the ESP32 microcontroller
 1. **Creating a device**  
-   Click on the "New Device" button in the bottom-right corner of the screen, where it will ask for Wi-Fi connection details before proceeding. Choose ESP32,
-   then continue through the wizard to complete the installation. If this is the first time connecting the ESP32, you'll need a physical connection, which is
-   where the micro-USB data cable will be used. Connect it to the ESP32, then click the three dot menu in the device you created and choose "Install", then choose
-   install through direct connection with the supervisor computer.
+   Click on the "New Device" button in the bottom-right corner of the screen, where it will ask for Wi-Fi connection details before proceeding. Choose ESP32, then continue through the wizard to complete the installation. If this is the first time connecting the ESP32, you'll need a physical connection, which is where the micro-USB data cable will be used. Connect it to the ESP32, then click the three dot menu in the device you created and choose "Install", then choose install through direct connection with the supervisor computer.
+   Before the upload process starts, press and hold the **Boot** button on the ESP32 microcontroller board, and keep it held down until ESPHome shows "Preparing installation", in which you can let go off the button.
    > Note: If you're using a Raspberry Pi with 1 GB of RAM, it won't be powerful enough to compile the .yaml file needed to configure the ESP32. You'll need to compile it in your own machine for it to work. A more in-depth tutorial can be found [here.](./tutorials/Compiling_ESPHome.md)
 
-2. **Uploading the .yaml Code to the ESP32**
+3. **Uploading the .yaml Code to the ESP32**
+   You can find the .yaml code [here.](../1_ESP/esphomeTudo.yaml). Copy it and paste it onto the device .yaml, which you can do by clicking the Edit button on the bottom right corner of the device you just created:
+
+<div align="center">
+  <img src="https://media.discordapp.net/attachments/1005273511918579765/1525658824680149044/image.png?ex=6a543001&is=6a52de81&hm=ff2750f36465c8788c155ae0fca517ebb277047ff18c7898088c7361bde18374&=&format=webp&quality=lossless&width=337&height=96" alt="Edit button" width="600"/>
+  <h3></h3>
+</div>
+
+   Now, go back to the three-dot menu and install it again, in which case it should now be working correctly. In the overview page, search for your living room, in which the configured sensors and pump should appear.
