@@ -70,3 +70,13 @@ binary_sensor:
       inverted: true
     name: "Sensor de Fim de Curso"
     device_class: opening
+
+switch:
+  - platform: gpio
+    name: "Bomba"
+    pin:
+      number: GPIO21
+      inverted: true
+      mode:
+        output: true
+        open_drain: true
