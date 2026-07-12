@@ -22,7 +22,8 @@ Open the ESPHome dashboard and click Edit on your device. Locate the appropriate
 
 For example, a DHT22 temperature and humidity sensor:
 
-```sensor:
+```
+sensor:
   - platform: dht
     pin: GPIO4
     model: DHT22
@@ -30,15 +31,18 @@ For example, a DHT22 temperature and humidity sensor:
       name: "Room Temperature"
     humidity:
       name: "Room Humidity"
-    update_interval: 10s```
+    update_interval: 10s
+```
 
 Or an analog soil moisture sensor:
 
-```sensor:
+```
+sensor:
   - platform: adc
     pin: GPIO34
     name: "Soil Moisture"
-    update_interval: 5s```
+    update_interval: 5s
+```
 
 ### Step 3: Validate the Configuration
 Before installing the firmware, click Validate. ESPHome will compile the configuration and report any syntax or compatibility errors.
@@ -65,38 +69,48 @@ True / False
 Open / Closed
 
 Example:
-```binary_sensor:
+```
+binary_sensor:
   - platform: gpio
     pin: GPIO18
-    name: "Door Sensor"```
+    name: "Door Sensor"
+```
 
 ### Analog Sensors
 Analog sensors output a voltage proportional to the measured value.
 
 Example:
-```sensor:
+```
+sensor:
   - platform: adc
     pin: GPIO34
-    name: "Water Level"```
+    name: "Water Level"
+```
 
 ### Output
 #### Relay
-```switch:
+```
+switch:
   - platform: gpio
     pin: GPIO23
-    name: "Water Pump"```
+    name: "Water Pump"
+```
 
 #### PWM
-```output:
+```
+output:
   - platform: ledc
     pin: GPIO19
-    id: pwm_output```
+    id: pwm_output
+```
 
 #### Buzzer
-```output:
+```
+output:
   - platform: ledc
     pin: GPIO25
-    id: buzzer```
+    id: buzzer
+```
 
 ## Finding New Components
 
