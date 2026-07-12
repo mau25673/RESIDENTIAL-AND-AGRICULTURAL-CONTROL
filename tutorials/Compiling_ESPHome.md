@@ -45,5 +45,5 @@ In the case you got a Raspberry Pi 3 or version with a similar/lower processing 
    ```
    .esphome/build/livingroom/.pioenvs/livingroom/firmware.factory.bin
    ```
-> Note: be sure that you can see hidden files.
+> Note: be sure that you can see hidden files and have a secrets.yaml file with your network information in the same folder.
   Hold down the **Boot** button until it starts uploading the files, in which case you can release it.
