@@ -132,3 +132,16 @@ Where to find documentation of how to expand the system.
 
 **This project covers:**
 How to use Tailscale VPN to connect multiple devices to the Home Assistant supervisor remotely for free.
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for more details.
+
+---
+
+## Authors
+
+* **Maurício Melo Filho** - [GitHub](https://github.com/mau25673)
+* **Thales Soares de Araújo** - [GitHub](https://github.com/six24325) 
