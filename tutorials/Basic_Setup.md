@@ -39,10 +39,10 @@
    > Note: If you're using a Raspberry Pi with 1 GB of RAM, it won't be powerful enough to compile the .yaml file needed to configure the ESP32. You'll need to compile it in your own machine for it to work. A more in-depth tutorial can be found [here.](./tutorials/Compiling_ESPHome.md)
 
 3. **Uploading the .yaml Code to the ESP32**
-   You can find the .yaml code [here.](../1_ESP/esphomeTudo.yaml). Copy it and paste it onto the device .yaml, which you can do by clicking the Edit button on the bottom right corner of the device you just created:
+   You can find the .yaml code [here](../1_ESP/esphomeTudo.yaml). Copy it and paste it onto the device .yaml, which you can do by clicking the Edit button on the bottom left corner of the device you just created:
 
 <div align="center">
-  <img src="https://media.discordapp.net/attachments/1005273511918579765/1525658824680149044/image.png?ex=6a543001&is=6a52de81&hm=ff2750f36465c8788c155ae0fca517ebb277047ff18c7898088c7361bde18374&=&format=webp&quality=lossless&width=337&height=96" alt="Edit button" width="600"/>
+  <img src="https://media.discordapp.net/attachments/1005273511918579765/1525658824680149044/image.png?ex=6a58cd41&is=6a577bc1&hm=e12490808c525557559f8ddcabba882b0f25a793017395b7b021ee6e737a51d3&=&format=webp&quality=lossless&width=469&height=134" alt="Edit button" width="600"/>
   <h3></h3>
 </div>
 
